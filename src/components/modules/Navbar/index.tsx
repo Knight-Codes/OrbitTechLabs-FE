@@ -1,0 +1,26 @@
+"use client";
+
+import React from "react";
+import Link from "next/link";
+import { NavMenu } from "./components/NavMenu";
+import OrbitTechLabs from "@/assets/svg/orbit-tech-labs";
+
+const Navbar = () => {
+  return (
+    <div className="py-1.5 flex flex-row justify-center border-b border-grey-500">
+      <div className="w-[90%] flex flex-row justify-between items-center">
+        <Link href="/">
+          <div className="flex items-center gap-1">
+            <OrbitTechLabs className="h-10 w-10" />
+            <h2 className="text-md font-extrabold text-center font-sans uppercase">
+              Orbit Tech Labs
+            </h2>
+          </div>
+        </Link>
+        <NavMenu />
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
