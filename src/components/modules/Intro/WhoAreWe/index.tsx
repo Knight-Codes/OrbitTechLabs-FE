@@ -37,8 +37,8 @@ const FeatureCard = ({
       <Card className="p-6">
         <div className="flex items-start space-x-4">
           <motion.div
-            animate={isHovered ? { y: -8, scale: 1 } : {}}
-            transition={{ type: "spring", stiffness: 300, damping: 10 }}
+            animate={isHovered ? { y: -4, scale: 1 } : {}}
+            transition={{ type: "tween", stiffness: 300, damping: 10 }}
           >
             {icon}
           </motion.div>
@@ -77,7 +77,7 @@ const WhoAreWe = () => {
           <section className="text-center space-y-4">
             <h1 className="text-4xl font-bold text-slate-900">Who We Are</h1>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              At <span className="font-semibold text-pink-300">Orbit Tech Labs</span>, we
+              At <span className="font-semibold text-primary-300">Orbit Tech Labs</span>, we
               are more than just an IT consultancy—we are
               <span className="text-primary-300 font-semibold">
                 &nbsp;strategic partners&nbsp;
