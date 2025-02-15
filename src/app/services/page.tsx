@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useRef } from "react";
-import { servicesData } from "./components/servicesData";
-import { ServiceTile } from "./components/SerivceTile";
-import { IdeaSection } from "./components/IdeaSection";
+import { servicesData } from "@/components/modules/Services/servicesData";
+import { ServiceTile } from "@/components/modules/Services/SerivceTile";
+import { IdeaSection } from "@/components/modules/Services/IdeaSection";
 import { motion, useInView } from "framer-motion";
 
 const variants = {
