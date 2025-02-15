@@ -3,7 +3,7 @@
 import React from "react";
 import { ServicesContents as Contents } from "@/components/modules/Services/Contents";
 
-export const Services = () => {
+export default function Services() {
   return (
     <div className="w-screen">
       <div className="flex flex-col justify-start items-center py-24 gap-4">
@@ -20,4 +20,4 @@ export const Services = () => {
       <Contents />
     </div>
   );
-};
+}
