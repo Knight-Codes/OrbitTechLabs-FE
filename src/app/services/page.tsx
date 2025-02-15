@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import { servicesData } from "./components/servicesData";
 import { ServiceTile } from "./components/SerivceTile";
 import { IdeaSection } from "./components/IdeaSection";
-import { motion, AnimatePresence, useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const variants = {
   hidden: { opacity: 0, y: 50 },
