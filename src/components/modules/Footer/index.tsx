@@ -1,11 +1,13 @@
+"use client";
+
 import React from "react";
 import { Separator } from "@/components/ui/separator";
 
 const quickLinks = [
-  //   {
-  //     name: "Services",
-  //     link: "/services",
-  //   },
+  {
+    name: "Services",
+    link: "/services",
+  },
   //   {
   //     name: "About Us",
   //     link: "/about",

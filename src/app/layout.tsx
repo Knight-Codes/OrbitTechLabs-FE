@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Navbar from "@/components/modules/Navbar";
+import Footer from "@/components/modules/Footer";
 
 export const metadata: Metadata = {
   title: "Orbit Tech Labs",
@@ -32,10 +33,11 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body
-        className={`${raleway.variable} ${xelo.variable} font-sans font-raleway antialiased`}
+        className={`${raleway.variable} ${xelo.variable}  font-sans font-raleway antialiased`}
       >
         <Navbar />
         {children}
+        <Footer />
         <Analytics />
       </body>
     </html>

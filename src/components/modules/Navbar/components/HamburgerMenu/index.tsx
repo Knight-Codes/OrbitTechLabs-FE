@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, ChevronRight } from "lucide-react";
 import { TopDrawer } from "@/components/modules/TopDrawer";
