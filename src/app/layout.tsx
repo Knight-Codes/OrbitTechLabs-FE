@@ -21,8 +21,6 @@ const xelo = localFont({
   variable: "--font-xelo",
 });
 
-const IS_IN_DEV = process.env.NODE_ENV === "development";
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -40,7 +38,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        {!IS_IN_DEV && <Analytics />}
+        <Analytics />
       </body>
     </html>
   );
