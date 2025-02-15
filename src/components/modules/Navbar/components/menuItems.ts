@@ -13,7 +13,7 @@ export const menuItems: {
   //       { name: "Our Team", href: "/company/team" },
   //     ],
   //   },
-  //   { name: "Services", href: "/services" },
+  { name: "Services", href: "/services" },
   //   { name: "Projects", href: "/projects" },
   //   { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
