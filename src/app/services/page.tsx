@@ -1,7 +1,11 @@
 "use client";
 
 import React from "react";
-import { ServicesContents as Contents } from "@/components/modules/Services/Contents";
+import dynamic from "next/dynamic";
+const Contents = dynamic(
+  () => import("@/components/modules/Services/Contents"),
+  { ssr: false }
+);
 
 export default function Services() {
   return (

@@ -11,7 +11,7 @@ const variants = {
   visible: { opacity: 1, y: 0 },
 };
 
-export const ServicesContents = () => {
+const ServicesContents = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -36,3 +36,5 @@ export const ServicesContents = () => {
     </div>
   );
 };
+
+export default ServicesContents;
