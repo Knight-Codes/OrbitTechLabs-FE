@@ -51,10 +51,10 @@ const Footer = () => (
           <ul className="space-y-2 text-sm">
             <li>
               <a
-                href="mailto:contact@orbittechlabs.com"
+                href="mailto:info@orbittechlabs.com"
                 className="hover:underline tracking-wider"
               >
-                bishal@orbittechlabs.com
+                info@orbittechlabs.com
               </a>
             </li>
             {/* <li>+1 (555) 123-4567</li>
@@ -67,7 +67,7 @@ const Footer = () => (
       <Separator className="my-6 bg-white/20" />
 
       <div className="font-serif text-center text-sm">
-        <p>© {new Date().getFullYear()} OrbitTechLabs. All rights reserved.</p>
+        <p> © {new Date().getFullYear()} OrbitTechLabs. All rights reserved. </p>
       </div>
     </div>
   </footer>
