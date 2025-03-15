@@ -7,7 +7,7 @@ import OrbitTechLabs from "@/assets/svg/orbit-tech-labs";
 
 const Navbar = () => {
   return (
-    <div className="py-1.5 flex flex-row justify-center border-b border-grey-500 top-0 sticky bg-white z-10 shadow-sm">
+    <nav className="h-navbar flex flex-row justify-center border-b border-grey-500 top-0 sticky bg-white z-10 shadow-sm">
       <div className="w-[90%] flex flex-row justify-between items-center">
         <Link href="/">
           <div className="flex items-center gap-1">
@@ -19,7 +19,7 @@ const Navbar = () => {
         </Link>
         <NavMenu />
       </div>
-    </div>
+    </nav>
   );
 };
 

@@ -35,6 +35,10 @@ const config: Config = {
         sans: ["var(--font-xelo)"],
         raleway: ["var(--font-raleway)"],
       },
+      height: {
+        navbar: "56px",
+        footer: "216px",
+      },
     },
     screens: {
       xs: "375px",
