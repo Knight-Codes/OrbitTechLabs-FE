@@ -19,7 +19,7 @@ const quickLinks = [
 ];
 
 const Footer = () => (
-  <footer className="h-footer bg-[#ef6b7b] text-white py-8">
+  <footer className="min-h-footer bg-[#ef6b7b] text-white py-8">
     <div className="container mx-auto px-4">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
         <div className="md:pl-8">

@@ -1,11 +1,10 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
-import Lottie from "react-lottie";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import dynamic from "next/dynamic";
+const AnimFrame = dynamic(() => import("../AnimFrame"), { ssr: false });
 
 export const ServiceTile = ({
   title,
@@ -20,14 +19,6 @@ export const ServiceTile = ({
   services: { icon: JSX.Element; text: string }[];
   isReversed?: boolean;
 }) => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animation,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
   return (
     <Card className="w-full max-w-6xl mx-auto shadow-none border-0">
       <CardContent className="p-8">
@@ -38,14 +29,7 @@ export const ServiceTile = ({
         >
           <div className="flex-1">
             <div className="flex h-full items-center justify-center bg-slate-50">
-              <Lottie
-                isClickToPauseDisabled
-                options={defaultOptions}
-                height={320}
-                width={320}
-                title={title}
-                style={{ cursor: "default" }}
-              />
+              <AnimFrame title={title} animation={animation} />
             </div>
           </div>
 

@@ -6,7 +6,7 @@ interface MainProps {
 
 const Main: React.FC<MainProps> = ({ children }) => {
   return (
-    <main className="flex-1 min-h-[calc(100vh-theme(height.navbar)-theme(height.footer))] px-4 py-6">
+    <main className="flex-1 min-h-[calc(100vh-theme(height.navbar)-theme(height.footer))] py-6">
       {children}
     </main>
   );
