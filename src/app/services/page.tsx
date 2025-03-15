@@ -1,11 +1,5 @@
-"use client";
-
 import React from "react";
-import dynamic from "next/dynamic";
-const Contents = dynamic(
-  () => import("@/components/modules/Services/Contents"),
-  { ssr: false }
-);
+import ServicesContents from "@/components/modules/Services/Contents";
 
 export default function Services() {
   return (
@@ -20,8 +14,7 @@ export default function Services() {
           businesses stay ahead in an ever-changing digital landscape
         </p>
       </div>
-
-      <Contents />
+      <ServicesContents />
     </div>
   );
 }

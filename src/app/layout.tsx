@@ -39,7 +39,7 @@ export default function RootLayout({
         <Navbar />
         <Main>{children}</Main>
         <Footer />
-        <Analytics />
+        {/* <Analytics /> */}
       </body>
     </html>
   );
