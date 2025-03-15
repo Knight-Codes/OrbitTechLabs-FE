@@ -67,7 +67,7 @@ const Footer = () => (
       <Separator className="my-6 bg-white/20" />
 
       <div className="font-serif text-center text-sm">
-        <p> © {new Date().getFullYear()} OrbitTechLabs. All rights reserved. </p>
+        <p> © {new Date().getFullYear()} Orbit Tech Labs. All rights reserved. </p>
       </div>
     </div>
   </footer>
