@@ -12,11 +12,11 @@ const Header = () => {
       <div className="h-[calc(100%-6rem)] flex flex-col justify-center items-center gap-6 md:gap-10 pt-4">
         <OrbitTechLabs />
 
-        <span className=" text-primary-300 font-extrabold uppercase text-4xl md:text-5xl">
+        <span className="font-xelo text-primary-300 font-extrabold uppercase text-4xl md:text-5xl">
           Orbit Tech Labs
         </span>
 
-        <p className="font-bold text-center text-blue-600 max-w-[52rem] px-1 text-xl md:text-4xl">
+        <p className="font-inter font-semibold text-center text-blue-600 max-w-[52rem] px-1 text-xl md:text-4xl">
           Future-Proof Your Business with Expert IT Solutions That Optimize,
           Secure, and Scale Your Technology.
         </p>
@@ -43,6 +43,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// font-sans -> xelo
-// font-raleway -> raleway ( default )

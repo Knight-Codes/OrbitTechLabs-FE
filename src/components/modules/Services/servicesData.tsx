@@ -36,7 +36,7 @@ export const servicesData: {
       },
       {
         icon: <span>⚛️</span>,
-        text: "Cross-Platform Development (React Native/Flutter)",
+        text: "Cross-Platform (React Native/Flutter)",
       },
       {
         icon: <Sparkles className="w-5 h-5 text-teal-500" />,

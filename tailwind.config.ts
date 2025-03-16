@@ -32,11 +32,15 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-xelo)"],
-        raleway: ["var(--font-raleway)"],
+        inter: ["var(--font-inter)"],
+        kanit: ["var(--font-kanit)"],
+        lexend: ["var(--font-lexend)"],
+        manrope: ["var(--font-manrope)"],
+		poppins: ["var(--font-poppins)"],
+        xelo: ["var(--font-xelo)"],
       },
       height: {
-        navbar: "56px",
+        navbar: "100px",
         footer: "216px",
       },
     },

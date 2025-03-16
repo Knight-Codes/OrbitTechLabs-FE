@@ -27,17 +27,17 @@ export const ServicesCard = ({
         </div>
 
         <div className="space-y-4 h-36 flex flex-col">
-          <h3 className="text-xl font-semibold text-slate-900">
+          <h3 className="font-inter text-xl font-semibold text-slate-900">
             {service.label}
           </h3>
-          <p className="text-slate-600">{service.description}</p>
+          <p className=" text-slate-600">{service.description}</p>
 
           <div className="flex flex-wrap gap-2">
             {service.features.map((feature, idx) => (
               <Badge
                 key={idx}
                 variant="secondary"
-                className="bg-slate-100 hover:bg-slate-200 tracking-wider"
+                className="bg-slate-100 hover:bg-slate-200 tracking-wider font-kanit"
               >
                 {feature}
               </Badge>

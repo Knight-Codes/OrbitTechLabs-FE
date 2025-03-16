@@ -4,15 +4,16 @@ import React from "react";
 import Link from "next/link";
 import { NavMenu } from "./components/NavMenu";
 import OrbitTechLabs from "@/assets/svg/orbit-tech-labs";
+import "./index.css"
 
 const Navbar = () => {
   return (
-    <nav className="h-navbar flex flex-row justify-center border-b border-grey-500 top-0 sticky bg-white z-10 shadow-sm">
+    <nav className="h-navbar navbar flex flex-row justify-center top-0 sticky z-10">
       <div className="w-[90%] flex flex-row justify-between items-center">
         <Link href="/">
           <div className="flex items-center gap-1">
-            <OrbitTechLabs className="h-10 w-10" />
-            <h2 className="text-md font-extrabold text-center font-sans uppercase">
+            <OrbitTechLabs className="h-20 w-20" />
+            <h2 className="text-xl font-semibold text-center font-xelo uppercase">
               Orbit Tech Labs
             </h2>
           </div>

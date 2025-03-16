@@ -12,7 +12,7 @@ export const MainMenu = () => {
         <div key={item.name} className="relative group">
           <Link
             {...(item.disabled ? { href: "#" } : { href: item.href })}
-            className={`inline-flex items-center px-1 pt-1 text-md font-semibold text-gray-700 hover:text-gray-900 ${
+            className={`font-inter uppercase inline-flex items-center px-1 pt-1 text-md font-semibold text-gray-700 hover:text-gray-900 ${
               item.disabled ? "cursor-not-allowed opacity-50" : ""
             }`}
           >

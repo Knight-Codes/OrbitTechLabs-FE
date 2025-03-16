@@ -22,11 +22,11 @@ const OurExpertises = () => {
               Our Expertise
             </Badge>
 
-            <h2 className="text-4xl font-bold tracking-tight sm:text-5xl text-slate-900">
+            <h2 className="font-inter text-4xl font-bold tracking-tight sm:text-5xl text-slate-900">
               Technology Solutions
             </h2>
 
-            <p className="max-w-3xl mx-auto text-lg text-slate-600">
+            <p className="font-inter max-w-3xl mx-auto text-lg text-slate-600">
               We expertise in delivering innovative, hand-crafted technology
               solutions that simplify complexity, enhance efficiency, and drive
               sustainable business growth.
