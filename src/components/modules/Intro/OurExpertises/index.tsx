@@ -8,7 +8,7 @@ import { services } from "./services";
 
 const OurExpertises = () => {
   return (
-    <section className="px-4 pb-8 bg-gradient-to-b from-white to-slate-50">
+    <section className="px-4 pb-12 bg-gradient-to-b from-white to-slate-50">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

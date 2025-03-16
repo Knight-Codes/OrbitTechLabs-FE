@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { inter, kanit, poppins, xelo } from "./fonts";
-import { Analytics } from "@vercel/analytics/next";
+// import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Navbar from "@/components/modules/Navbar";
 import Main from "@/components/modules/MainLayout";
@@ -32,7 +32,7 @@ export default function RootLayout({
         <Navbar />
         <Main>{children}</Main>
         <Footer />
-        <Analytics />
+        {/* <Analytics /> */}
       </body>
     </html>
   );
