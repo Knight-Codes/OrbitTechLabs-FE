@@ -16,7 +16,7 @@ const OurExpertises = () => {
         viewport={{ once: true }}
         className="max-w-7xl mx-auto"
       >
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-6 mb-16">
             <Badge variant="secondary" className="px-4 py-1">
               Our Expertise
@@ -33,7 +33,7 @@ const OurExpertises = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
             {services.map((service, index) => (
               <ServicesCard key={index} service={service} />
             ))}

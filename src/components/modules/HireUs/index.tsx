@@ -8,17 +8,19 @@ import HireUsImg from "@/assets/images/hire-us.jpg";
 
 const HireUs = () => {
   return (
-    <div className="relative overflow-hidden px-0 sm:px-8">
+    <div className="relative overflow-hidden">
       <div className="relative h-[100vh] sm:h-[68vh] flex items-center bg-gray-900">
         <ParallaxProvider>
-          <Parallax speed={-25} className="absolute inset-0 w-full h-full">
+          <Parallax
+            speed={-25}
+            className="absolute inset-0 w-full h-full rounded-md"
+          >
             <Image
               src={HireUsImg}
               alt="Parallax Background"
               layout="fill"
-              objectFit="cover"
               quality={100}
-              className="filter blur-[4px]"
+              className="filter blur-[4px] object-cover"
             />
           </Parallax>
         </ParallaxProvider>

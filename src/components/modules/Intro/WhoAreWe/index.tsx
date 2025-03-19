@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Rocket, Check, Zap, Users, Shield, Code } from "lucide-react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
+import HireUs from "../../HireUs";
 
 const SectionHeading = ({ children }: { children: React.ReactNode }) => (
   <motion.h2
@@ -71,14 +72,17 @@ const WhoAreWe = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="max-w-6xl mx-auto space-y-12 py-12"
+        className="max-w-6xl mx-auto space-y-12"
       >
-        <div className="max-w-6xl mx-auto space-y-12 py-12">
+        <div className="max-w-6xl mx-auto space-y-16 py-12">
           <section className="text-center space-y-4">
             <h1 className="text-4xl font-bold text-slate-900">Who We Are</h1>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              At <span className="font-semibold text-primary-300">Orbit Tech Labs</span>, we
-              are more than just an IT consultancy—we are
+              At{" "}
+              <span className="font-semibold text-primary-300">
+                Orbit Tech Labs
+              </span>
+              , we are more than just an IT consultancy—we are
               <span className="text-primary-300 font-semibold">
                 &nbsp;strategic partners&nbsp;
               </span>
@@ -102,7 +106,7 @@ const WhoAreWe = () => {
               <FeatureCard
                 icon={<Zap className="w-8 h-8 text-blue-500" />}
                 title="Technical Expertise"
-                description="Blending cutting-edge technical knowledge with industry best practices"
+                description="Cutting-edge technical knowledge with best practices"
               />
               <FeatureCard
                 icon={<Shield className="w-8 h-8 text-blue-500" />}
@@ -121,6 +125,8 @@ const WhoAreWe = () => {
               />
             </div>
           </section>
+
+          <HireUs />
 
           <section className="space-y-6">
             <SectionHeading>Why Choose Us?</SectionHeading>
