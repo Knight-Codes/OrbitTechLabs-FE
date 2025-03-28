@@ -12,9 +12,9 @@ export const MainMenu = () => {
         <div key={item.name} className="relative group">
           <Link
             {...(item.disabled ? { href: "#" } : { href: item.href })}
-            className={`inline-flex items-center px-1 pt-1 text-md font-semibold text-gray-700 hover:text-gray-900 ${
-              item.disabled ? "cursor-not-allowed opacity-50" : ""
-            }`}
+            className={
+              "font-inter uppercase inline-flex items-center px-1 text-md font-semibold text-black"
+            }
           >
             {item.name}
             {item.subItems && (
@@ -23,9 +23,17 @@ export const MainMenu = () => {
           </Link>
 
           {isActive(item.href) ? (
-            <span className="absolute bottom-[-14px] left-0 h-[2px] bg-gray-900 w-full transition-all duration-400" />
+            <span
+              className={
+                "absolute bottom-[-14px] left-0 h-[2px] w-full transition-all duration-400 bg-black"
+              }
+            />
           ) : (
-            <span className="absolute bottom-[-14px] left-0 w-0 h-[2px] bg-gray-900 group-hover:w-full transition-all duration-400" />
+            <span
+              className={
+                "absolute bottom-[-14px] left-0 w-0 h-[2px] group-hover:w-full transition-all duration-400 bg-black"
+              }
+            />
           )}
 
           {item.subItems && (

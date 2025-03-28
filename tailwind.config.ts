@@ -11,17 +11,17 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          25: "#fdeeee",
-          50: "#fce5ea",
-          100: "#f8c8d2",
-          200: "#f28a98",
-          300: "#ef6b7b",
-          400: "#da4a65",
-          500: "#c13d54",
-          600: "#a83144",
-          700: "#8f2534",
-          800: "#761924",
-          900: "#5d0d14",
+          50: "#F5F3FF",
+          100: "#F3E8FF",
+          200: "#E9D5FF",
+          300: "#D8B4FE",
+          400: "#C084FC",
+          500: "#A855F7",
+          600: "#9333EA", // Your provided primary color
+          700: "#7E22CE",
+          800: "#6B21A8",
+          900: "#581C87",
+          950: "#3B0764",
         },
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -32,11 +32,15 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-xelo)"],
-        raleway: ["var(--font-raleway)"],
+        inter: ["var(--font-inter)"],
+        kanit: ["var(--font-kanit)"],
+        lexend: ["var(--font-lexend)"],
+        manrope: ["var(--font-manrope)"],
+        poppins: ["var(--font-poppins)"],
+        xelo: ["var(--font-xelo)"],
       },
       height: {
-        navbar: "56px",
+        navbar: "60px",
         footer: "216px",
       },
     },
@@ -63,3 +67,15 @@ const config: Config = {
   //   plugins: [require("tailwindcss-animate")],
 };
 export default config;
+
+//  50: "#f2e8fc",
+//  100: "#e1cbf9",
+//  200: "#ceadf6",
+//  300: "#ba90f3",
+//  400: "#a773f0",
+//  500: "#9456ed",
+//  600: "#810fd7", // Your provided primary color
+//  700: "#6e0cb4",
+//  800: "#5b0991",
+//  900: "#48076e",
+//  950: "#240337",

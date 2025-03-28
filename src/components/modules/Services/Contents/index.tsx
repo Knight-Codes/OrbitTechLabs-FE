@@ -16,7 +16,7 @@ const ServicesContents = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div className="flex flex-col items-center justify-start py-24 bg-gradient-to-b from-slate-50 to-slate-100">
+    <div className="flex flex-col items-center justify-start py-24 pt-12 bg-gradient-to-b from-slate-50 to-slate-100">
       <div ref={ref} className="space-y-8">
         {servicesData.map((service, index) => (
           <motion.div

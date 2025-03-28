@@ -18,8 +18,7 @@ export const services = [
   {
     label: "API Development",
     icon: <Server className="w-16 h-16" />,
-    description:
-      "Robust, dependable and secured backend services and APIs.",
-    features: ["REST", "GraphQL", "Node.js", "Python"],
+    description: "Robust, dependable and secured backend services and APIs.",
+    features: ["REST", "GraphQL", "Node.js", "Python", "Flask", "Spring Boot"],
   },
 ];

@@ -7,7 +7,7 @@ import { SocialLinks } from "@/components/modules/Contact/SocialLinks";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row md:px-8 lg:px-20 py-12">
+    <div className="flex flex-col lg:flex-row md:px-8 lg:px-20 py-8 sm:py-12">
       <div className="w-full lg:w-1/2">
         <GreetingSection />
       </div>

@@ -1,48 +1,42 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
-import { ReactTyped } from "react-typed";
+import { cva } from "class-variance-authority";
+import { TextContent } from "./components/TextContent";
 import OrbitTechLabs from "@/assets/svg/orbit-tech-labs";
-import { Button } from "@/components/ui/button";
+import { NavMenu } from "../../Navbar/components/NavMenu";
+
+const containerStyles = cva(
+  "relative w-full h-[40rem] sm:h-[95vh] sm:mt-2.5 mb-20 bg-cover bg-center rounded-[1rem] border"
+);
 
 const Header = () => {
   return (
-    <div className="w-screen h-[calc(100vh-3rem)]">
-      <div className="h-[calc(100%-6rem)] flex flex-col justify-center items-center gap-6 md:gap-10 pt-4">
-        <OrbitTechLabs />
-
-        <span className=" text-primary-300 font-extrabold uppercase text-4xl md:text-5xl">
-          Orbit Tech Labs
-        </span>
-
-        <p className="font-bold text-center text-blue-600 max-w-[52rem] px-1 text-xl md:text-4xl">
-          Future-Proof Your Business with Expert IT Solutions That Optimize,
-          Secure, and Scale Your Technology.
-        </p>
-
-        <ReactTyped
-          strings={[
-            "Optimizing IT for Maximum Performance, Reliability, and Business Growth...",
-            "Securing Your Digital Future with Robust, Scalable, and Cutting-Edge Solutions...",
-            "Innovating Solutions and Powering Success Through Technology-Driven Transformation...",
-          ]}
-          typeSpeed={30}
-          className="font-medium text-center max-w-[32rem] h-4 px-2"
-          loop
-        />
-
-        <Link href={"/contact"}>
-          <Button className="text-lg rounded-full mt-8 px-8 bg-blue-600 hover:bg-slate-800">
-            Say Hello !
-          </Button>
-        </Link>
+    <div className="px-2 sm:px-6">
+      <div
+        className={containerStyles()}
+        style={{ backgroundImage: "url('/banner-img.jpg')" }}
+      >
+        <div className="absolute top-5 left-4 sm:top-10 sm:left-16">
+          <Link href="/">
+            <div className="flex items-center gap-2">
+              <OrbitTechLabs className="h-16 w-16 sm:h-20 sm:w-20" />
+              <h2
+                className={
+                  "text-xl sm:text-3xl font-semibold text-center font-xelo uppercase text-black mt-[-2px]"
+                }
+              >
+                Orbit Tech Labs
+              </h2>
+            </div>
+          </Link>
+        </div>
+        <div className="absolute top-9 right-6 sm:top-16 sm:right-14 z-10">
+          <NavMenu />
+        </div>
+        <TextContent />
       </div>
     </div>
   );
 };
 
 export default Header;
-
-// font-sans -> xelo
-// font-raleway -> raleway ( default )
