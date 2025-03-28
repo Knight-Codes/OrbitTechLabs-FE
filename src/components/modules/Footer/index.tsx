@@ -19,11 +19,11 @@ const quickLinks = [
 ];
 
 const Footer = () => (
-  <footer className="min-h-footer bg-[#ef6b7b] text-white py-8">
+  <footer className="min-h-footer bg-slate-900 text-white py-8">
     <div className="container mx-auto px-4">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
         <div className="md:pl-8">
-          <h3 className="font-bold text-xl mb-4">ORBIT TECH LABS</h3>
+          <h3 className="font-xelo font-bold text-xl mb-4">ORBIT TECH LABS</h3>
           <p className="text-sm tracking-wider">
             Delivering innovative IT solutions and services that empower
             businesses to thrive in the digital age. Contact us today to explore

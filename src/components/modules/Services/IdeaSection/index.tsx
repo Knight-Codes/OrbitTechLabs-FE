@@ -33,7 +33,7 @@ export const IdeaSection = () => {
           <div className="space-y-4">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 flex items-center gap-2">
               Got a vision to bring to life?
-              <Rocket className="w-6 h-6 text-blue-500 inline animate-bounce" />
+              {/* <Rocket className="w-6 h-6 text-blue-500 inline animate-bounce" /> */}
             </h2>
 
             <p className="text-gray-600 text-lg">
@@ -43,7 +43,7 @@ export const IdeaSection = () => {
             </p>
 
             <Link href="/contact">
-              <button className="group flex items-center gap-2 text-primary-300 transition-colors mt-4">
+              <button className="group flex items-center gap-2 text-primary-600 transition-colors mt-4">
                 <span className="font-semibold tracking-wider">
                   Start the conversation
                 </span>

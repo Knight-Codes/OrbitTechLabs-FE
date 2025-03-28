@@ -37,20 +37,20 @@ export const ServiceTile = ({
             <div className="flex flex-col space-y-6">
               <div className="space-y-4">
                 <h1 className="text-3xl font-bold text-gray-900">{title}</h1>
-                <p className="text-gray-600 text-lg">{description}</p>
+                <p className="text-gray-600 text-md">{description}</p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 space-y-1">
                 {services.map((service, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <div className="flex-shrink-0">{service.icon}</div>
-                    <span className="text-gray-700">{service.text}</span>
+                    <span className="text-gray-700 text-sm">{service.text}</span>
                   </div>
                 ))}
               </div>
 
               <Link href={"/contact"}>
-                <Button className="flex items-center space-x-2 transition-colors w-fit bg-primary-300 ml-1">
+                <Button className="flex items-center space-x-2 transition-colors w-fit bg-primary-500 ml-1">
                   <span className="font-medium">Explore</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </Button>

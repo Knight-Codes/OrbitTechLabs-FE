@@ -110,7 +110,7 @@ export const ContactForm = () => {
 
         <Button
           type="submit"
-          className="w-full bg-[#3498db] text-white rounded-xl h-12 transition-all duration-200 hover:scale-[1.02] text-md"
+          className="w-full bg-slate-800 text-white rounded-xl h-12 transition-all duration-200 hover:scale-[1.02] text-md"
           disabled={isLoading}
         >
           {isLoading ? (

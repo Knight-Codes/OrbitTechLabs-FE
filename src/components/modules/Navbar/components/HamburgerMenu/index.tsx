@@ -10,7 +10,7 @@ export const HamburgerMenu = () => {
     <div className="sm:hidden">
       <TopDrawer>
         <TopDrawer.Trigger>
-          <Menu />
+          <Menu className="w-8 h-8" />
         </TopDrawer.Trigger>
         <TopDrawer.Content>
           <div className="flex flex-col gap-2 items-start">
